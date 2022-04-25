@@ -7,7 +7,7 @@ namespace OOPS
         static void Main(string[] args)
         {
             Console.WriteLine("----------Welcome To Food Grains Program----------\n");
-            const string INVENTORY_DATA_PATH = @"E:\PracticeProblems\OOPS\OOPS\InventoryDataManagement\Inventory.json";
+            const string INVENTORY_DATA_PATH = @"E:\PracticeProblems\OOPS\OOPS\OOPS\InventoryDataManagement\Inventory.json";
             InventoryManagement foodGrains = new InventoryManagement();
             bool check = true;
             while (check)
