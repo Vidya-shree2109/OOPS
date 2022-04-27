@@ -1,0 +1,17 @@
+[
+  {
+    "StockName": "ICICI",
+    "StockPrice": 40,
+    "NumOfShares": 60
+  },
+  {
+    "StockName": "Infosys",
+    "StockPrice": 20,
+    "NumOfShares": 150
+  },
+  {
+    "StockName": "SBI",
+    "StockPrice": 80,
+    "NumOfShares": 150
+  }
+]
