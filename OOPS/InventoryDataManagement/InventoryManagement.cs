@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace OOPS.InventoryDataManagement
@@ -15,10 +16,10 @@ namespace OOPS.InventoryDataManagement
             {
                 var json = reader.ReadToEnd();
                 var inventory = JsonConvert.DeserializeObject<List<InventoryData>>(json);
-                Console.WriteLine("Name" + "\t" + "Weight" + "\t" + "PricePerKg" + "\t" + "TotalPrice\n");
+                Console.WriteLine("Name" + "\t" + "Price" + "\t" + "Weight" + "\t" + "TotalPrice\n");
                 foreach(var data in inventory)
                 {
-                    Console.WriteLine(data.Name + "\t" + data.Weight + "\t" + data.PricePerKg + "\t\t" + (data.Weight * data.PricePerKg));
+                    Console.WriteLine(data.Name + "\t" + data.Price + "\t" + data.Weight + "\t" + (data.Weight * data.Price));
                 }
             }
         }
